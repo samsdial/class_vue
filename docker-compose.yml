@@ -1,0 +1,29 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: web
+    command: http-server -p 8000
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - bower
+      - gulp
+  npm:
+    image: web
+    command: npm install
+    volumes:
+      - .:/code
+  bower:
+    image: web
+    command: bower install --allow-root
+    volumes:
+      - .:/code
+  gulp:
+    image: web
+    command: gulp
+    volumes:
+      - .:/code

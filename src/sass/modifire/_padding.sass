@@ -1,0 +1,64 @@
+// padding.sass
+$base-pd-spacing: 10px
+.pd
+    &_box
+        &--x
+            &10
+                padding: $base-pd-spacing
+            &15
+                padding: $base-pd-spacing+5
+            &20
+                padding: $base-pd-spacing*2
+    &_top
+        &--x
+            &10
+                padding-top: $base-pd-spacing
+            &15
+                padding-top: $base-pd-spacing + 5
+            &20
+                padding-top: $base-pd-spacing*2
+            &50
+                padding-top: $base-pd-spacing*5
+            &100
+                padding-top: $base-pd-spacing * 10
+                &i
+                    +MQ(S)
+                        padding-top: $base-pd-spacing * 5 !important
+                    +MQ(M)
+                        padding-top: $base-pd-spacing * 10 !important
+            &200
+                padding-top: $base-pd-spacing * 20
+    &_bottom
+        &--x
+            &10
+                padding-bottom: $base-pd-spacing
+            &15
+                padding-bottom: $base-pd-spacing + 5
+            &20
+                padding-bottom: $base-pd-spacing*2
+            &50
+                padding-bottom: $base-pd-spacing*5
+            &100
+                padding-bottom: $base-pd-spacing * 10
+                &i
+                    padding-bottom: $base-pd-spacing * 10 !important
+            &200
+                padding-bottom: $base-pd-spacing * 20
+    &_left
+        &--x
+            &10
+                padding-left: $base-pd-spacing
+            &15
+                padding-left: $base-pd-spacing + 5
+            &100
+                padding-left: $base-pd-spacing * 10
+    &_right
+        &--x
+            &10
+                padding-right: $base-pd-spacing
+            &15
+                padding-right: $base-pd-spacing + 5
+            &50
+                padding-right: $base-pd-spacing * 5
+            &100
+                padding-right: $base-pd-spacing * 10

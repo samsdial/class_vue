@@ -1,0 +1,15 @@
+# File types
+*.sql
+
+# OS files
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+
+# Folders
+.sass-cache
+/public
+/src/bower_components
+/node_modules

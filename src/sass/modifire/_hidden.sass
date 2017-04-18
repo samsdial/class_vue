@@ -1,0 +1,17 @@
+// hidden.sass
+.hidden
+    display: none !important
+    //small (S)
+    &-sm
+        @media (min-width: 0px) and (max-width: $S)
+            display: none
+    //medium (M)
+    &-md
+        @media (min-width: $S) and (max-width: $M)
+            display: none
+    //large (L)
+    &-lg
+        @media (min-width: $M) and (max-width: $L)
+            display: none
+        +MQ(L)
+            display: none

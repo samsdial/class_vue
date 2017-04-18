@@ -1,0 +1,66 @@
+// margin.sass
+$base-mg-spacing: 10px
+.mg
+    &_box
+        &--min
+            margin: $base-mg-spacing + 5
+        &--middle
+            margin: $base-mg-spacing * 10
+        &--max
+            margin: $base-mg-spacing  * 20
+    &_top
+        &--x
+            &5
+                margin-top: $base-mg-spacing/2
+            &10
+                margin-top: $base-mg-spacing
+            &15
+                margin-top: 15px
+            &20
+                margin-top: $base-mg-spacing*2
+            &30
+                margin-top: $base-mg-spacing*3
+            &50
+                margin-top: $base-mg-spacing*5
+            &100
+                margin-top: $base-mg-spacing * 10
+                &i
+                    +MQ(S)
+                        margin-top: $base-mg-spacing * 5 !important
+                    +MQ(M)
+                        margin-top: $base-mg-spacing * 10 !important
+            &150
+                margin-top: $base-mg-spacing * 10 + 50
+                &i
+                    +MQ(S)
+                        margin-top: $base-mg-spacing * 5 + 55 !important
+                    +MQ(M)
+                        margin-top: $base-mg-spacing * 10 + 50 !important
+    &_bottom
+        &--x
+            &5
+                margin-bottom: $base-mg-spacing/2
+            &10
+                margin-bottom: $base-mg-spacing
+            &15
+                margin-bottom: 15px
+            &20
+                margin-bottom: $base-mg-spacing*2
+            &30
+                margin-bottom: $base-mg-spacing*3
+            &50
+                margin-bottom: $base-mg-spacing*5
+            &100
+                margin-bottom: $base-mg-spacing * 10
+    &_left
+        &--x
+            &10
+                margin-left: $base-mg-spacing
+            &100
+                margin-left: $base-mg-spacing * 10
+    &_right
+        &--x
+            &10
+                margin-right: $base-mg-spacing
+            &100
+                margin-right: $base-mg-spacing * 10
