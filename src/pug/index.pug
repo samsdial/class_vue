@@ -1,5 +1,24 @@
 extends ./base/layout.pug
 
 block content
-    .main
-        h1 inicio
+    main
+        h1 {{ mensaje }}
+        input(type="text", v-model="mensaje")
+        pre {{ $data }}
+
+//- Directivas
+//- v-model asociar
+//- v-show (display none)
+//- v-if (elimina el elemento del Dom)(condicional si pasa o positivo ( v-if="var < 18"))
+//- v-esle (condicional negativo)(v-else-if="var > 200"))
+//- v-esle-if (condicional)(v-else)
+//- template v-if
+//- Matriz render
+//- v-for directiva para una matriz (v-for="dia in laborales")
+//- laborales['lunes','martes','miercoles','jueves', 'viernes']
+
+//- vue devTools (herramienta o extencio de chrome)
+//- EVENTOS
+//- v-on
+//- v-on:click a un botom
+//- v-on:keyup.enter (añade desde un enter)

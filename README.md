@@ -18,5 +18,5 @@ $ docker-compose up
 
 ## gulp
 ```
-$ docker exec -it miproject_web_1 gulp watch
+$ docker exec -it classvue_web_1 gulp watch
 ```

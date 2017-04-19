@@ -1,3 +1,5 @@
+'use strict';
+
 // vainilla JavaScript
 // const input = document.querySelector('input');
 // const h1 = document.querySelector('h1');
@@ -7,6 +9,6 @@
 new Vue({
     el: 'main',
     data: {
-        mensaje: '',
+        mensaje: ''
     }
 });
